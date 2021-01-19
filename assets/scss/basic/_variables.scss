@@ -1,0 +1,105 @@
+//////////////////////
+///// Sass variables
+//////////////////////
+
+// ----------------------------------------------------------------------------
+// COLORS
+// ----------------------------------------------------------------------------
+// colors primary
+$cl-white:		#fff;
+$cl-black:		#000;
+$cl-grey:		#ccc;
+
+//custom colors
+$cl-main:	#3E3E3E;
+
+
+$cl-font:	#D6D6D6;
+
+// ----------------------------------------------------------------------------
+// FONTS
+// ----------------------------------------------------------------------------
+// sizes
+$font-supersize:	64px;
+$font-xxl:			46px;
+$font-xl:			32px;
+$font-l:			24px;
+$font-m:			18px;
+$font-s:			16px;
+$font-xs:			12px;
+$font-xxs:			8px;
+
+//weights
+$font-regular:		400;
+$font-medium:		600;
+$font-bold:			700;
+$font-extrabold:	800;
+
+// families
+
+$font: "Montserrat", sans-serif;
+$font-tech: "Lucida Console", Monaco, monospace;
+
+// ----------------------------------------------------------------------------
+// BREAKPOINTS
+// ----------------------------------------------------------------------------
+$bp-xxs:	480px;
+$bp-xs:		600px;
+$bp-s:		840px;
+$bp-m:		960px;
+$bp-l:		1200px;
+$bp-xl:		1400px;
+$bp-xxl:	1600px;
+$bp-font:	$bp-s; // the breakpoint the base-font-size (<html>) responds to
+
+// ----------------------------------------------------------------------------
+// LAYOUT
+// ----------------------------------------------------------------------------
+$doc-width: 1920px;
+
+// ----------------------------------------------------------------------------
+// SPACINGS
+// ----------------------------------------------------------------------------
+// vertical spacings (set via resp-spacing mixin)
+// mobile (bp-1)
+$spacing-xxl:	80px;
+$spacing-xl:	64px;
+$spacing-l:		48px;
+$spacing-m:		32px;
+$spacing-s:		24px;
+$spacing-xs:	16px;
+$spacing-xxs:	8px;
+
+// SPACING TABLET/DESKTOP
+$spacing-xxl-dk:	240px;
+$spacing-xl-dk:		190px;
+$spacing-l-dk:		120px;
+$spacing-m-dk:		55px;
+$spacing-s-dk:		25px;
+$spacing-xs-dk:		15px;
+$spacing-xxs-dk:	8px;
+
+// ----------------------------------------------------------------------------
+// IMAGE RATIOS
+// ----------------------------------------------------------------------------
+$image-ratio-16to9:		(9 / 16);
+$image-ratio-4to1:		(1 / 4);
+$image-ratio-3to1:		(1 / 3);
+$image-ratio-2to1:		(1 / 2);
+$image-ratio-2-5to1:	(2 / 5);
+$image-ratio-4to3:		(3 / 4);
+$image-ratio-3to4:		(4 / 3);
+$image-ratio-1to1:		(1 / 1);
+
+
+// ----------------------------------------------------------------------------
+// EASING FUNCTIONS
+// https://matthewlein.com/tools/ceaser
+// ----------------------------------------------------------------------------
+$easeInOutQuad:		cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$easeInOutQuart:	cubic-bezier(0.77, 0, 0.175, 1);
+$easeInQuad:		cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$easeOutQuad:		cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$easeOutQuart:		cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeInOutSine:		cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$easeOutExpo:		cubic-bezier(0.19, 1, 0.22, 1);

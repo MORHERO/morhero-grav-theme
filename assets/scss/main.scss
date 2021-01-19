@@ -1,0 +1,48 @@
+@import "basic/variables";
+
+//@import "basic/debug";
+
+/*-----|| fonts ||----------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+
+
+
+/*-----|| custom global definitions ||-----------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+html, body {
+	margin: 0;
+	background-color: $cl-main;
+	color: $cl-font;
+}
+
+main {
+	max-width: $doc-width;
+	padding: 20px;
+	margin: 0px auto;
+}
+
+.flex {
+	display: flex;
+}
+
+.button, button {
+
+	&:hover {
+		
+	}
+	&.active {
+		
+	}
+}
+
+
+
+
+/*-----|| import content ||----------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+@import "templates/header";
+@import "templates/navigation";
+@import "templates/footer";
