@@ -1,0 +1,32 @@
+<section modular="expertise-list">
+	<div class="inner">
+
+		{% include 'partials/intro-block.html.twig' %}
+
+		<div class="flex">
+			
+		{% for expertise in page.header.expertise %}
+			{% set expertise_media_path = expertise.media|first.path %}
+
+			<div class="element expertise" scroll-parallax='true' parallax-type='bottom' parallax-offset='0-150'>
+				<div class="inner">
+					<div class="img-container">
+						<img src="{{ url(expertise_media_path) }}">
+					</div>
+					<a href="{{ url(expertise.pageselect|raw) }}">
+						<div class="overlay">
+							
+							<div class="glitch-text-container flex">
+								<h2 class="glitch-headline master" data-text="{{ expertise.title|raw }}">{{ expertise.title|raw }}</h2>
+								<h3 class="glitch-headline" data-text="{{ expertise.subtitle|raw }}">{{ expertise.subtitle|raw }}</h3>
+							</div>
+							
+						</div>
+					</a>
+				</div>
+			</div>
+
+		{% endfor %}
+
+	</div>
+</section>

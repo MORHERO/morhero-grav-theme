@@ -1,0 +1,9 @@
+<div class="intro flex {{ page.header.intro.align|raw }}" scroll-parallax='true' parallax-type='{{ page.header.intro.align|raw }}'>
+	<div class="inner">
+		<h2>{{ page.header.intro.title|raw }}</h2>
+		<p>{{ page.header.intro.content|raw }}</p><br/>
+		{% if page.header.intro.link %}
+			<a href="{{ page.header.intro.link.url|raw }}" class="button text-icon icon-arrow-right2">{{ page.header.intro.link.text|raw }}</a>
+		{% endif %}
+	</div>
+</div>

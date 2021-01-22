@@ -29,6 +29,7 @@ $font-name: 'lmsans10-regular-webfont';
 /*-----------------------------------------------------------------------------------*/
 
 @import "basic/variables";
+@import "basic/mixin";
 @import "basic/debug";
 
 
@@ -55,6 +56,10 @@ main {
 header {
 	position: relative;
 	overflow: hidden;
+}
+
+section {
+	margin-bottom: 120px;
 }
 
 /*-----|| text ||--------------------------------------------------------------------*/
@@ -148,8 +153,11 @@ h6, .h6 {
 @import "templates/header";
 @import "templates/footer";
 
-@import "modules/project-preview";
+
+@import "modules/expertise-list";
 @import "modules/page-teaser";
+@import "modules/project-preview";
 
 @import "modules/parts/glitch-text";
+@import "modules/parts/intro_block";
 @import "modules/parts/matrix";

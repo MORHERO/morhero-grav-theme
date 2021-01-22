@@ -2,11 +2,7 @@
 <section modular="project-preview">
 	<div class="inner">
 		
-		<div class="intro" scroll-parallax='true' parallax-type='left'>
-			<h2>{{ page.header.intro.title|raw }}</h2>
-			<p>{{ page.header.intro.content|raw }}</p><br/>
-			<a href="{{ page.header.intro.link.url|raw }}" class="button text-icon icon-arrow-right2">{{ page.header.intro.link.text|raw }}</a>
-		</div>
+		{% include 'partials/intro-block.html.twig' %}
 
 		<div class="flex">
 			

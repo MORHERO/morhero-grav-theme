@@ -1,7 +1,5 @@
 section[modular=project-preview] {
-	max-width: $doc-width;
-	padding: 2em 4em;
-	margin: 0px auto;
+	@include doc-width;
 	>.inner {
 		>.flex {
 			justify-content: space-between;
@@ -13,13 +11,6 @@ section[modular=project-preview] {
 				flex-direction: column;
 			}
 		}
-
-		.intro {
-			margin: 40px 0px 80px;
-			max-width: 640px;
-			width: 40%;
-		}
-
 
 		.element.inner {
 			position: relative;

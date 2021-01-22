@@ -1,0 +1,5 @@
+@mixin doc-width {
+	max-width: $doc-width;
+	padding: 2em 4em;
+	margin: 0px auto;
+}

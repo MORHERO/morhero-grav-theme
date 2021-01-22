@@ -1,0 +1,12 @@
+section .intro.flex {
+	justify-content: flex-start;
+	>.inner {
+		margin: 40px 0px 80px;
+		max-width: 640px;
+		width: 40%;
+	}
+	
+	&.right {
+		justify-content: flex-end;
+	}
+}

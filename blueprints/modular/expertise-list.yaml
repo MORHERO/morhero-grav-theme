@@ -59,15 +59,19 @@ form:
                                   value: "center"
                                 - text: Right
                                   value: "right"
-            header.project:
+            header.expertise:
               ordering@: 3
               type: list
-              label: MH_BASIC.PROJECT.LIST
+              label: MH_BASIC.EXPERTISE.LIST
               style: vertical
               fields:
                 .title:
                   type: text
                   label: PLUGIN_ADMIN.TITLE
+                  style: vertical
+                .subtitle:
+                  type: text
+                  label: MH_BASIC.SUBTITLE
                   style: vertical
                 .media:
                   type: file
@@ -76,14 +80,21 @@ form:
                   destination: 'user/uploads'
                   style: vertical
                   avoid_overwriting: true
-                .description:
-                  type: editor
-                  label: MH_BASIC.DESCRIPTION
-                  validate:
-                    type: textarea
+                .category:
+                  type: selectize 
+                  label: MH_BASIC.CATEGORY
                   style: vertical
-                .pageselect:
-                  type: pages
-                  label: MH_BASIC.PAGESELECT
-                  start_route: '/project/'
-                  show_all: true
+                  selectize:
+                    options:
+                      - text: Web-Dev
+                        value: "dev-web"
+                      - text: Game-Dev
+                        value: "dev-game"
+                      - text: Service & Support
+                        value: "support"
+                      - text: Managing
+                        value: "manage"
+                      - text: Writing
+                        value: "writing"
+                      - text: Content Creation
+                        value: "content"
