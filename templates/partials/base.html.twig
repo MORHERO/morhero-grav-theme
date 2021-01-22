@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<head>
+	{% block head deferred %}
+		<meta charset="utf-8" />
+		<title>{% if page.title %}{{ page.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{% include 'partials/metadata.html.twig' %}
+
+		<link rel="icon" type="image/png" href="{{ url('theme://assets/media/favicon/favicon.png') }}" />
+		<link rel="canonical" href="{{ page.url(true, true) }}" />
+	{% endblock head %}
+
+	{% block stylesheets %}
+		{% do assets.addCss('theme://assets/css/icomoon.css') %}
+		{% do assets.addCss('theme://assets/css/main.css') %}
+	{% endblock %}
+
+	{% block javascripts %}
+		{% do assets.addJs('theme://assets/js/glitch.js', {group:'bottom'}) %}
+		{% do assets.addJs('theme://assets/js/parallax.js', {group:'bottom'}) %}
+		{% do assets.addJs('theme://assets/js/matrix.js', {group:'bottom'}) %}
+		{% do assets.addJs('theme://assets/js/main.js', {group:'bottom'}) %}
+	{% endblock %}
+
+	{% block assets deferred %}
+		{{ assets.css()|raw }}
+		{{ assets.js()|raw }}
+	{% endblock %}
+</head>
+<body>
+	{% block header %}
+		<header>
+			<div module="matrix-bg"></div>
+			{% block navigation %}
+				{% include 'partials/navigation.html.twig' %}
+			{% endblock %}
+
+			{% include 'partials/header.html.twig' %}
+
+		</header>
+	{% endblock %}
+
+	{% block main %}
+		<main>
+			{% block content %}{% endblock %}
+		</main>
+	{% endblock %}
+
+	{% block sidebar %}
+		<aside>
+			
+		</aside>
+	{% endblock %}
+
+	{% block footer %}
+		{% include 'partials/footer.html.twig' %}
+	{% endblock %}
+
+	{% block bottom %}
+		{{ assets.js('bottom')|raw }}
+	{% endblock %}
+</body>
+</html>

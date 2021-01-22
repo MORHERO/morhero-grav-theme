@@ -1,0 +1,20 @@
+{% set header_media_path = header.master.media|first.path %}
+<div class="flex">
+	<div class="element">
+		<div class="inner">
+			<div class="glitch-text-container">
+				<p class="glitch-headline master" data-text="{{ page.header.master.text.top }}">{{ page.header.master.text.top }}</p>
+				<p class="glitch-headline" data-text="{{ page.header.master.text.center }}">{{ page.header.master.text.center }}</p>
+				<p class="glitch-headline underline" data-text="{{ page.header.master.text.bottom }}">{{ page.header.master.text.bottom }}</p>
+			</div>
+		</div>
+	</div>
+	<div class="element">
+		<div class="inner flex">
+			<div class="glitch-image-container">
+				<img class="canvas" src="{{ url(header_media_path) }}">
+				<canvas></canvas>
+			</div>
+		</div>
+	</div>
+</div>

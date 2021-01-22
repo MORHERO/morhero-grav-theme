@@ -1,0 +1,69 @@
+title: page-teaser
+
+extends@: module-base
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+
+          fields:
+            header.teaser:
+              ordering@: 2
+              type: fieldset
+              title: MH_BASIC.TEASER
+              collapsible: true
+              fields:
+                columns:
+                  type: columns
+                  fields:
+                    column1:
+                      type: column
+                      fields:
+                        header.teaser.title:
+                          type: text
+                          label: PLUGIN_ADMIN.TITLE
+                          style: vertical
+                        header.teaser.heading:
+                          type: text
+                          label: MH_BASIC.HEADLINE
+                          style: vertical
+                        header.teaser.content:
+                          type: editor
+                          validate:
+                            type: textarea
+                          label: PLUGIN_ADMIN.CONTENT
+                          style: vertical
+                        sub_column:
+                            type: columns
+                            fields:
+                              sub_column1:
+                                type: column
+                                fields:
+                                  header.teaser.link.text:
+                                    type: text
+                                    label: MH_BASIC.LINK.TEXT
+                                    style: vertical
+                              sub_column2:
+                                type: column
+                                fields:
+                                  header.teaser.link.url:
+                                    type: text
+                                    label: MH_BASIC.LINK.URL
+                                    style: vertical
+                    column2:
+                      type: column
+                      fields:
+                        header.teaser.image:
+                          type: file
+                          label: PLUGIN_ADMIN.IMAGE
+                          multiple: false
+                          destination: 'user/uploads'
+                          style: vertical
+                          avoid_overwriting: true

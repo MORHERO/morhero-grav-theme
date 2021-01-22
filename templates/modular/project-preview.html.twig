@@ -1,0 +1,47 @@
+
+<section modular="project-preview">
+	<div class="inner">
+		
+		<div class="intro" scroll-parallax='true' parallax-type='left'>
+			<h2>{{ page.header.intro.title|raw }}</h2>
+			<p>{{ page.header.intro.content|raw }}</p><br/>
+			<a href="{{ page.header.intro.link.url|raw }}" class="button text-icon icon-arrow-right2">{{ page.header.intro.link.text|raw }}</a>
+		</div>
+
+		<div class="flex">
+			
+		{% for project in page.header.project %}
+			{% set project_media_path = project.media|first.path %}
+			<div class="element project" scroll-parallax='true' parallax-type='bottom' parallax-offset='0-150'>
+				<div class="flex">
+					
+					<div class="element inner">
+						<div class="img-container">
+							<img src="{{ url(project_media_path) }}">
+						</div>
+						<a href="{{ url(project.pageselect|raw) }}">
+						<div class="overlay">
+							
+							<div class="text-container flex">
+								<p>{{ project.description|raw }}</p>
+							</div>
+							
+						</div></a>
+					</div>
+					<div class="element inner">
+						<div class="title">
+							<div class="text-container flex">
+								<p>{{ project.title|raw }}</p>
+								<a class="button icon-arrow-right2" href="{{ url(project.pageselect|raw) }}"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		{% endfor %}
+
+		</div>
+
+	</div>
+</section>

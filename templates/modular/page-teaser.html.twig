@@ -1,0 +1,27 @@
+{% set teaser_media_path = header.teaser.image|first.path %}
+<section modular="page-teaser" scroll-parallax='true' parallax-type='split'>
+	<div class="inner">
+		
+		<div class="flex">
+			<div class="element image">
+				<div class="inner">
+					<div class="img-container">
+						<img src="{{ url(teaser_media_path) }}">
+					</div>
+				</div>
+			</div>
+
+			<div class="element text">
+				<div class="inner">
+					<div class="text-container">
+						<h2 class="h3">{{ page.header.teaser.title|raw }}</h2>
+						<h3 class="h2">{{ page.header.teaser.heading|raw }}</h3>
+						<p>{{ page.header.teaser.content|raw }}</p>
+						<a href="{{ page.header.teaser.link.url|raw }}" class="button text-icon icon-arrow-right2">{{ page.header.teaser.link.text|raw }}</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</section>

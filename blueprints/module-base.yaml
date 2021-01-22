@@ -1,0 +1,27 @@
+title: base
+
+extends@: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+
+          fields:
+            header.title:
+              ordering@: 0
+              type: text
+              autofocus: true
+              label: PLUGIN_ADMIN.TITLE
+              style: vertical
+
+            header.media_order:
+              label: MH_BASIC.MEDIA_UPLOAD
+              destination: 'user/uploads'
+

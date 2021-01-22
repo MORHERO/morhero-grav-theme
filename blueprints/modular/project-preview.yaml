@@ -1,0 +1,77 @@
+title: project-preview
+
+extends@: module-base
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+
+          fields:
+            header.intro:
+                ordering@: 2
+                type: fieldset
+                title: MH_BASIC.INTRO.SECTION
+                collapsible: true
+                fields:
+                  columns:
+                    type: columns
+                    fields:
+                      column1:
+                        type: column
+                        fields:
+                          header.intro.title:
+                            type: text
+                            label: MH_BASIC.INTRO.TITLE
+                            style: vertical
+                          header.intro.content:
+                            type: editor
+                            label: MH_BASIC.INTRO.TEXT
+                            validate:
+                              type: textarea
+                            style: vertical
+                      column2:
+                        type: column
+                        fields:
+                          header.intro.link.text:
+                            type: text
+                            label: MH_BASIC.TEXT
+                            style: vertical
+                          header.intro.link.url:
+                            type: text
+                            label: MH_BASIC.URL
+                            style: vertical
+            header.project:
+              ordering@: 3
+              type: list
+              label: MH_BASIC.PROJECT.LIST
+              style: vertical
+              fields:
+                .title:
+                  type: text
+                  label: PLUGIN_ADMIN.TITLE
+                  style: vertical
+                .media:
+                  type: file
+                  label: PLUGIN_ADMIN.IMAGE
+                  multiple: false
+                  destination: 'user/uploads'
+                  style: vertical
+                  avoid_overwriting: true
+                .description:
+                  type: editor
+                  label: MH_BASIC.DESCRIPTION
+                  validate:
+                    type: textarea
+                  style: vertical
+                .pageselect:
+                  type: pages
+                  label: MH_BASIC.PAGESELECT
+                  start_route: '/project/'
+                  show_all: true

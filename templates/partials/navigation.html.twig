@@ -1,0 +1,36 @@
+<nav>
+	<div class="inner flex">
+		<div class="wrap logo">
+			<div class="inner">
+
+				<a href="{{ home_url }}">
+					<picture>
+						<source media="(min-width: 640px)" srcset="{{ url('theme://assets/media/logo/logo.png') }}">
+						<source media="(min-width: 320px)" srcset="{{ url('theme://assets/media/logo/logo-s.png') }}">
+						<img src="{{ url('theme://assets/media/logo/logo.png') }}" alt="{{ site.title }}">
+					</picture>
+				</a>
+
+			</div>
+		</div>
+
+		<div class="wrap nav">
+			<div class="inner flex">
+
+				{% for p in pages.children.visible %}
+					{% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
+
+					<div class="nav-element">
+						<div class="inner">
+							<a href="{{ p.url }}" class="{{ active_page }}">
+								{{ p.title }}
+							</a>
+						</div>
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+
+	</div>
+</nav>

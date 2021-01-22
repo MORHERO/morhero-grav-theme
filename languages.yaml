@@ -1,0 +1,39 @@
+en:
+  MH_BASIC:
+    TITLE: "Title"
+    SUBTITLE: "Subtitle"
+    MASTER_HEADER: "Mainheader"
+    INTRO: 
+      SECTION: "Intro section"
+      TITLE: "Intro Title"
+      TEXT: "Intro Text"
+    TEASER: "Teaser section"
+    DESCRIPTION: "Description"
+    MEDIA_UPLOAD: "Media upload"
+    PAGESELECT: "Select a page"
+    HEADLINE: "Headline"
+    LINK:
+      TEXT: "Link text"
+      URL: "Link URL"
+    PROJECT:
+      LIST: "Project list"
+
+de:
+  MH_BASIC:
+    TITLE: "Titel"
+    SUBTITLE: "Untertitel"
+    MASTER_HEADER: "Hauptheader"
+    INTRO: 
+      SECTION: "Einleitung"
+      TITLE: "Einleitungstitel"
+      TEXT: "Einleitungstext"
+    TEASER: "Teaser"
+    DESCRIPTION: "Beschreibung"
+    MEDIA_UPLOAD: "Medien hochladen"
+    PAGESELECT: "Seiten auswahl"
+    HEADLINE: "Überschrift"
+    LINK:
+      TEXT: "Link text"
+      URL: "Link URL"
+    PROJECT:
+      LIST: "Projekt Liste"
