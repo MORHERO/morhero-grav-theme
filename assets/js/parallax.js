@@ -101,7 +101,7 @@ class ScrollParallax {
 			this._parent.style.transform = 'translate(0%, '+ perc +'%)';
 		}
 
-		this._set_opacity(this._parent, 50);
+		this._set_opacity(this._parent, 10);
 		return;
 	}
 
