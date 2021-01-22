@@ -1,0 +1,37 @@
+nav {
+	position: relative;
+	>.inner.flex {
+		max-height: $nav-height;
+		justify-content: space-between;
+		padding: 1em 4em;
+		>.wrap {
+			>.inner {
+				height: 100%;
+			}
+		}
+	}
+	.logo {
+		img {
+			height: 100%;
+		}
+	}
+
+	.nav {
+		>.inner {
+			align-items: center;
+		}
+
+		.nav-element {
+			margin:0px 1em;
+			>.inner {
+
+			}
+			a {
+				font-size: $font-l;
+				font-family: $font-heading;
+				text-decoration: none;
+			}
+		}
+	}
+
+}

@@ -6,15 +6,17 @@
 // COLORS
 // ----------------------------------------------------------------------------
 // colors primary
-$cl-white:		#fff;
-$cl-black:		#000;
-$cl-grey:		#ccc;
+$cl-white:		#FFF;
+$cl-black:		#0E0E0E;
+$cl-grey:		#CCC;
 
 //custom colors
-$cl-main:	#3E3E3E;
+$cl-main:	#1F1F1F;
+$cl-main-80:	rgba(31,31,31,0.8);
+$cl-main-60:	rgba(31,31,31,0.6);
+$cl-main-light: #2F2F2F;
 
-
-$cl-font:	#D6D6D6;
+$cl-font:	#EAEAEA;
 
 // ----------------------------------------------------------------------------
 // FONTS
@@ -37,8 +39,8 @@ $font-extrabold:	800;
 
 // families
 
-$font: "Montserrat", sans-serif;
-$font-tech: "Lucida Console", Monaco, monospace;
+$font-text: "latin_modern_sans10_regular", Verdana, sans-serif;
+$font-heading: "tex_gyre_herosbold", Helvetica, sans-serif;
 
 // ----------------------------------------------------------------------------
 // BREAKPOINTS
@@ -56,6 +58,16 @@ $bp-font:	$bp-s; // the breakpoint the base-font-size (<html>) responds to
 // LAYOUT
 // ----------------------------------------------------------------------------
 $doc-width: 1920px;
+
+// HEADER
+$header-height: 92vh;
+// NAVIGATION
+$nav-height-basis: 120px;
+$nav-height: $nav-height-basis - (2 * $font-m);
+// PROJECT-PREVIEW
+$project-preview-element-count: 4;
+$project-preview-element-width: calc(( 100% / #{$project-preview-element-count} ) - 2em );
+$overlay-padding: 2em;
 
 // ----------------------------------------------------------------------------
 // SPACINGS

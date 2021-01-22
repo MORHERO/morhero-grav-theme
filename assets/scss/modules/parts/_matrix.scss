@@ -1,0 +1,21 @@
+[module=matrix-bg] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0; top:0;
+	display: flex;
+	justify-content: space-evenly;
+	p {
+		line-height: 1;
+	}
+	span {
+		display: block;
+		width: $font-xxl; 
+		height: $font-xxl; 
+		font-size: $font-xxl; 
+		//color: #9bff9b11;
+		color: #EAEAEA11;
+		text-align: center;
+		font-family: "Helvetica Neue", Helvetica, sans-serif;
+	}
+}

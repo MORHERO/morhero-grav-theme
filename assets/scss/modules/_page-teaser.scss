@@ -1,0 +1,22 @@
+section[modular=page-teaser] {
+	>.inner {
+		>.flex {
+			//justify-content: space-between;
+		}
+	}
+
+	.element {
+		&.image {
+			width: calc(60% - 1em);
+		}
+		&.text {
+			width: calc(40% - 1em);
+			>.inner {
+				max-width: 380px;
+			}
+		}
+		>.inner {
+
+		}
+	}
+}

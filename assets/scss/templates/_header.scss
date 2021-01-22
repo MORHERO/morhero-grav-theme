@@ -1,0 +1,39 @@
+header {
+	background-color: $cl-black;
+	height: $header-height;
+	margin-bottom: 120px;
+	>.flex {
+		height: calc(#{$header-height} - #{$nav-height-basis});
+		justify-content: space-around;
+		padding: 0em 4em;
+		>.element {
+			&:first-child {
+				width: 30%;
+			}
+			>.inner {
+				height: 100%;
+				&.flex {
+					align-items: flex-end;
+				}
+			}
+		}
+	}
+	.glitch-text-container {
+		margin-top: 20%;
+	}
+	.glitch-image-container {
+		position: relative;
+		height: 100%;
+		margin-bottom: -5px;
+		img {
+			height: calc(100% - 5px);
+
+			opacity: 0.5;
+		}
+		canvas {
+			position: absolute;
+			left: 0;top: 0;
+			height: calc(100% - 5px);width: 100%;
+		}
+	}
+}
