@@ -1,39 +1,69 @@
 en:
   MH_BASIC:
-    TITLE: "Title"
-    SUBTITLE: "Subtitle"
-    MASTER_HEADER: "Mainheader"
+    ALIGN: "Alignment"
+    CATEGORY: "Category"
+    CENTER: "Center"
+    COLOR:
+      BG: "Background Color"
+    DESCRIPTION: "Description"
+    ENABLE: "Enable"
+    EXPERTISE:
+      LIST: "Expertise List"
+    HEADLINE: "Headline"
+    HEIGHT: "Height"
     INTRO: 
       SECTION: "Intro section"
       TITLE: "Intro Title"
       TEXT: "Intro Text"
-    TEASER: "Teaser section"
-    DESCRIPTION: "Description"
-    MEDIA_UPLOAD: "Media upload"
-    PAGESELECT: "Select a page"
-    HEADLINE: "Headline"
+    LEFT: "Left"
     LINK:
       TEXT: "Link text"
       URL: "Link URL"
+    MASTER_HEADER: "Mainheader"
+    MEDIA_SELECT: "Media select"
+    MEDIA_UPLOAD: "Media upload"
+    PAGESELECT: "Select a page"
+    PARALLAX:
+      SETTINGS: "Parallax settings"
     PROJECT:
       LIST: "Project list"
+    RIGHT: "Right"
+    SUBTITLE: "Subtitle"
+    TEASER: "Teaser section"
+    TITLE: "Title"
+    TYPE: "Type"
 
 de:
   MH_BASIC:
-    TITLE: "Titel"
-    SUBTITLE: "Untertitel"
-    MASTER_HEADER: "Hauptheader"
+    ALIGN: "Ausrichtung"
+    CATEGORY: "Kategorie"
+    CENTER: "Zentriert"
+    COLOR:
+      BG: "Hintergrundfarbe"
+    DESCRIPTION: "Beschreibung"
+    ENABLE: "Einschalten"
+    EXPERTISE:
+      LIST: "Expertisen Liste"
+    HEADLINE: "Überschrift"
+    HEIGHT: "Höhe"
     INTRO: 
       SECTION: "Einleitung"
       TITLE: "Einleitungstitel"
       TEXT: "Einleitungstext"
-    TEASER: "Teaser"
-    DESCRIPTION: "Beschreibung"
-    MEDIA_UPLOAD: "Medien hochladen"
-    PAGESELECT: "Seiten auswahl"
-    HEADLINE: "Überschrift"
+    LEFT: "Links"
     LINK:
       TEXT: "Link text"
       URL: "Link URL"
+    MASTER_HEADER: "Hauptheader"
+    MEDIA_SELECT: "Medien auswählen"
+    MEDIA_UPLOAD: "Medien hochladen"
+    PAGESELECT: "Seiten auswahl"
+    PARALLAX:
+      SETTINGS: "Parallax Einstellungen"
     PROJECT:
       LIST: "Projekt Liste"
+    RIGHT: "Rechts"
+    SUBTITLE: "Untertitel"
+    TEASER: "Teaser"
+    TITLE: "Titel"
+    TYPE: "Type"

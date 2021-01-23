@@ -59,13 +59,13 @@ header {
 }
 
 section {
-	margin-bottom: 120px;
+	margin-bottom: 120px!important;
 }
 
 /*-----|| text ||--------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
 
-p, a, a:active, a:visited, span {
+p, a, a:active, a:visited, span, ul, ol, li {
 	color: $cl-font;
 	font-family: $font-text;
 }
@@ -154,9 +154,11 @@ h6, .h6 {
 @import "templates/footer";
 
 
+@import "modules/clean-text";
 @import "modules/expertise-list";
 @import "modules/page-teaser";
 @import "modules/project-preview";
+@import "modules/seperator-image";
 
 @import "modules/parts/glitch-text";
 @import "modules/parts/intro_block";

@@ -1,0 +1,14 @@
+{% set sp = header.parallax.enabled %}
+{% set st = (header.parallax.type == 'center') ? 'bottom' : header.parallax.type %}
+
+<section modular="clean-text" scroll-parallax="{{ sp }}" parallax-type="{{ st }}">
+	<div class="inner">
+
+		<div class="text-container">
+
+			{{ page.content }}
+			
+		</div>
+
+	</div>
+</section>

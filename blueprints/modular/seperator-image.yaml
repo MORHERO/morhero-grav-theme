@@ -1,0 +1,45 @@
+title: project-preview
+
+extends@: module-base
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+
+          fields:
+            header.main:
+                ordering@: 2
+                type: fieldset
+                title: PLUGIN_ADMIN.CONTENT
+                collapsible: true
+                fields:
+                  header.main.media_select:
+                    type: filepicker
+                    label: MH_BASIC.MEDIA_SELECT
+                    type: filepicker
+                    folder: 'user/uploads'
+                    label: Select a file
+                    preview_images: true
+                    accept:
+                      - .png
+                      - .jpg
+                  header.main.media:
+                    type: file
+                    label: MH_BASIC.MEDIA_UPLOAD
+                    multiple: false
+                    destination: 'user/uploads'
+                    style: vertical
+                    avoid_overwriting: true
+                  header.main.bg_color:
+                     type: colorpicker
+                     label: MH_BASIC.COLOR.BG
+                  header.main.height:
+                     type: text
+                     label: MH_BASIC.HEIGHT
